@@ -11,7 +11,7 @@ function tong1N(n) {
     for (let i = 1; i <= n; i++) {
         sum = sum + i;
     }
-    return ` tổng từ 1 đến ${n} là: ` + sum;
+    return ` Tổng từ 1 đến ${n} là: ` + sum;
 }
 
 function tongADenB(a, b) {
@@ -41,7 +41,7 @@ function mangLe(n) {
         }
         i++;
     }
-    return ` mảng ${n} số lẻ nhỏ nhất là: ` + list;
+    return ` Mảng ${n} số lẻ nhỏ nhất là: ` + list;
 }
 
 function mangLeTuN(a, b) {
@@ -53,7 +53,7 @@ function mangLeTuN(a, b) {
         }
         b++;
     }
-    return ` mảng ${a} số lẻ bắt đầu từ ${c} là: ` + list;
+    return ` Mảng ${a} số lẻ bắt đầu từ ${c} là: ` + list;
 }
 
 function KiemTraNT(n) {
@@ -81,7 +81,7 @@ function nNguyenTo(x) {
             list.push(n);
         }n++;    
     }
-    return list;
+    return ` Mảng ${x} số nguyên tố là: `+list;
 }
 
 function nNguyenToTuM(a,b) {

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="https://github.com/hohieuit/javascript-coban/blob/master/de%20bai/1_function.txt">
+    <script src="javascript.js"></script>
+
+    <title>Bài tập hàm</title>
+</head>
+
+<body>
+    <div id="ketQua">
+
+
+    </div>
+
+    <script>
+        //truy cập node trên giao diện
+        var nodeKetQua = document.getElementById("ketQua");
+        var HTMLKetQua = "";
+        let nodeResult = document.getElementById('result');
+        let HTMLResult = "";
+        let a = 12;
+        let b = 4;
+        let s1 = "cong hoa";
+        let s2 = "xa hoi";
+        let s3 = "chu nghia";
+        let s4 = "viet nam";
+        let s5 = "doc lap";
+        //Bài 1
+        HTMLKetQua = HTMLKetQua + `<p>Tổng hai số ${tong(2, 3)}</p>
+        <p>Hiệu hai số ${hieu(2, 3)}</p>
+        <p>Tích hai số ${tich(2, 3)}</p>
+        <p>Thương hai số ${thuong(2, 3)}</p>
+        <p>Bình phương ${binhphuong(2)}</p>
+        <p>Trong hai số  ${timSoLonHonTrong2So(6, 5)}</p>
+        <p>Trong hai số  ${timSoBeHonTrong2So(4, 5)}</p>
+        <p>Trung bình hai số ${trungBinh(3, 5)}  </p>
+        <p>Chia lấy dư hai số ${chiaLayDu(7, 3)}  </p>
+        <p>Chia lấy dư hai số ${chiaHet(4, 2)}  </p>
+        <p>Chu vi hình chữ nhật có hai cạnh ${chuViChuNhat(4, 2)}  </p>
+        <p>Diện tích hình chữ nhật có hai cạnh ${dienTichChuNhat(4, 2)}  </p>
+        <p>Chu vi hình tròn có bán kính ${chuViHinhTron(4)}  </p>
+        <p>Diện tích hình tròn có bán kính ${dienTichHinhTron(4)}  </p>
+
+        <p>Cộng chuỗi: ${addString(s1, s2, s3, s4, s5)}</p>
+        <p>Chuỗi viết hoa: ${upperString(s1, s2, s3, s4, s5)}</p>
+        <p>Kiểm tra tồn tại: ${checkExistString(s1, s2)}</p>
+        <p>Độ dài của chuỗi s: ${stringLength(s1, s2, s3, s4, s5)}</p>
+        <p>Cắt chuỗi từ vị trí số 1 đến số 3: ${changeString(s1, s2, s3, s4, s5)}</p>
+        <p>Chuỗi s1 = ${s1} và s2 = ${s2}: ${checkString(s1, s2)}</p>
+        `;
+
+
+
+
+        //ghi kết quả ra giao diện
+        nodeKetQua.innerHTML = HTMLKetQua;
+    </script>
+</body>
+
+</html>
